@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julian Fermani - Portafolio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <li class="nav__li"><a class="nav__a" href="#projects">Proyectos</a></li>
+            <li class="nav__li"><a class="nav__a" href="#aboutme">Sobre mí</a></li>
+            <li class="nav__li nav__li--btn"><a class="nav__a nav__a--w" href="#main">Inicio</a></li>
+            <li class="nav__li"><a class="nav__a" href="#skills">Conocimientos</a></li>
+            <li class="nav__li"><a class="nav__a" href="#form">Contactos</a></li>
+        </nav>
+    </header>
+    <section class="main" id="main">
+        <div class="contenedor main__flex">
+            <h1 class="main__h1">¡Hola! Me llamo <span>Julian</span> y soy desarrollador web <span class="underline">frontend</span></h1>
+            <div class="main__svg">
+                <img src="assets/ilustracion.svg" alt="web developement" class="main__wd">
+                <img src="assets/mancha.svg" alt="pintura" class="main__m">
+            </div>
+        </div>
+    </section>
+    <section class="aboutme" id="aboutme">
+        <h3 class="aboutme__h3">Sobre mí</h3>
+            <div class="aboutme__contenedor">
+                <div class="aboutme__texto">
+                    <h3 class="aboutme__titulo">Soy un desarrollador web autodidacta</h3>
+                    <p class="aboutme__parrafo" >Adolescente cordobés (16), con ganas de aprender cosas todos los dias. Como ya lo dije, me considero autodidacta, me encanta investigar y aprender. Estoy recien comenzando como freelance, por lo tanto, necesito mis primeros clientes :). Cuento con distintas habilidades para los trabajos en equipo como:</p>
+                    <div class="aboutme__ul__container">
+                        <div class="aboutme__ul">
+                            <li class="aboutme__li">➥Comunicación</li>
+                            <li class="aboutme__li">➥Flexibilidad</li>
+                            <li class="aboutme__li">➥Planificación</li>
+                            <li class="aboutme__li">➥Adaptación</li>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/ilustracion2.svg" alt="web developement" class="aboutme__ilustracion">
+            </div>
+        <img src="assets/wave blue.svg" alt="ola azul" class="aboutme__wave">
+    </section>
+    <section class="skills" id="skills">
+        <h3>Conocimientos</h3>
+        <div class="skills__container">
+            <div class="skills__btn">
+                <img class="skills__btn--svg" src="assets/html5-brands.svg" alt="html5">
+                <p>HTML5</p>
+            </div>
+            <div class="skills__btn">
+                <img class="skills__btn--svg" src="assets/css3-alt-brands.svg" alt="css">
+                <p>CSS3</p>
+            </div>
+            <div class="skills__btn">
+                <img class="skills__btn--svg" src="assets/bootstrap-brands.svg" alt="bootstrap">
+                <p>BOOTSTRAP</p>
+            </div>
+            <div class="skills__btn">
+                <img class="skills__btn--svg" src="assets/palette-solid.svg" alt="UX/UI">
+                <p>UX / UI</p>
+            </div>
+            <div class="skills__btn">
+                <img class="skills__btn--svg" src="assets/github-brands.svg" alt="github">
+                <p>GITHUB</p>
+            </div>
+            <div class="skills__btn">
+                <img class="skills__btn--svg" src="assets/git-brands.svg" alt="git">
+                <p>GIT</p>
+            </div>
+            <div class="skills__btn skills__btn--mb">
+                <img class="skills__btn--svg" src="assets/js-brands.svg" alt="javascript">
+                <p>JAVASCRIPT</p>
+            </div>
+            <div class="skills__btn skills__btn--mb">
+                <img class="skills__btn--svg" src="assets/figma-brands.svg" alt="figma">
+                <p>FIGMA</p>
+            </div>
+        </div>
+        <img src="assets/wave white.svg" class="skills__wave" alt="">
+    </section>
+    <section class="projects" id="projects">
+        <h3 class="projects__h3">Proyectos</h3>
+        <div class="projects__flex">
+            <div class="projects__container">
+                <h4 class="projects__title">Proyecto 1</h4>
+                <img class="projects__image" src="" alt="">
+                <p class="projects__text">Ver proyecto en .....</p>
+            </div>
+        </div>
+       
+        <!-- cada vez que hay proyecto nuevo solo copiar pegar y cambiar los titulos -->
+
+    </section>
+    <section class="form" id="form">
+        <h3 class="form__h3">Contactame</h3>
+            <form action="" class="form__real">
+                <div class="form__container">
+                    <input type="text" required>
+                    <label for="">Nombre:</label>
+                </div>
+                <div class="form__container">
+                    <input type="text" required>
+                    <label for="">E-mail:</label>
+                </div>
+                <div class="form__container">
+                    <input type="text" required>
+                    <label for="">Celular:</label>
+                </div>
+                <div class="form__container">
+                    <input type="text" required>
+                    <label for="">Asunto:</label>
+                </div>
+                <div class="form__container form__textarea">
+                    <textarea name="" id="" cols="30" rows="10" required></textarea>
+                    <label for="">Mensaje:</label>
+                </div>
+                <input class="form__submit" type="submit" value="Enviar">
+            </form>
+    </section>
+    <footer class="footer">
+            <h3 class="footer__h3">Julian Fermani</h3>
+    </footer>
+</body>
+</html>
