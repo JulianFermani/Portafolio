@@ -45,6 +45,7 @@ nav{
 .main{
     height: 100vh;
 }
+
 .main__flex{
     display: flex;
     justify-content: center;
@@ -332,3 +333,91 @@ nav{
 .footer__h3{
     font-weight: 300;
 }
+
+@media only screen and (max-width: 850px){
+    /* main */
+    .main{
+        height: auto;
+    }
+
+    .main__flex{
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+
+    .main__h1{
+        font-size: 35px;
+        width: 50%;
+        margin-left: 0;
+        margin-top: 90px;
+    }
+
+    .main__svg{
+        margin: 0 auto;
+    }
+
+    .main__wd{
+        width: 450px;
+        padding-right: 0;
+    }
+
+    .main__m{
+        width: 430px;
+        top: 80px;
+    }
+
+    /* about me */
+
+    .aboutme__h3{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .aboutme__contenedor{
+        flex-direction: column-reverse;
+    }
+
+    .aboutme__titulo{
+        font-size: 35px;
+    }
+
+    .aboutme__ilustracion{
+        width: 50%;
+    }
+
+    .aboutme__texto{
+        width: 60%;
+    }
+
+    /* skills */
+
+    .skills{
+        height: auto;
+    }
+
+    .skills h3{
+        font-size: 35px;
+    }
+
+    .skills__btn{
+        width: 70%;
+        height: 40px;
+        margin-top: 20px;
+    }
+
+    /* form */
+
+    .form__container input{
+        padding: 10px 100px 10px 5px;
+    }
+
+    .form__container textarea{
+        width: 720px;
+    }
+
+    .form__submit{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
