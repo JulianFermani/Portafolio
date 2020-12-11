@@ -11,7 +11,7 @@ header{
 
 /* nav */
 
-nav{
+.nav__ul{
     display: flex;
     justify-content: center;
 }
@@ -38,6 +38,26 @@ nav{
     background-color: #0026CA;
     border-radius: 6px;
     color: #ffffff;
+}
+
+.nav__ul__responsive{
+    display: none;
+}
+
+.menu__icon__container{
+    position: absolute;
+    width: 100%;
+    font-size: 25px;
+    background-color: #3a3a98;
+    margin-top: -100px;
+    z-index: 100;
+}
+
+.menu__icon{
+    padding: 6px 20px;
+    text-align: right;
+    width: 100%;
+    cursor: pointer;
 }
 
 /* main */
@@ -193,7 +213,7 @@ nav{
 .skills__wave{
     width: 100%;
     display: block;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 /* projects */
@@ -405,6 +425,12 @@ nav{
         margin-top: 20px;
     }
 
+    /* projects */
+
+    .projects__container{
+        flex-basis: auto;
+    }
+
     /* form */
 
     .form__container input{
@@ -421,3 +447,106 @@ nav{
     }
 }
 
+@media only screen and (max-width: 450px){
+    /* nav responsive */
+    .nav__ul{
+        display: none;
+    }
+
+    .menu__icon{
+        display: block;
+        font-size: 23px;
+    }
+
+    .nav{
+        height: 50px;
+        width: 100%;
+    }
+    
+    .nav__ul__responsive{
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin-top: 50px;
+        padding-top: 50px;
+        height: 50px;
+    }
+    
+    .nav__li__responsive--container{
+        position: relative;
+        top: -1000px;
+        height: calc(100vh - 250px);
+        background: #0026CA;
+        transition: all 1s;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .nav__li__responsive{
+        width: 50%;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        list-style: none;
+        background: #000;
+        border-radius: 6px;
+        text-align: center;
+    }
+
+    .nav__a__responsive{
+        text-decoration: none;
+        list-style: none;
+        color: #efefef;
+        text-align: center;
+    }
+
+    .nav__ul__responsive:hover > .nav__li__responsive--container{
+        top: -70px;
+    }
+
+    /* main */
+    
+    .main__h1{
+        width: 75%;
+        font-size: 33px;
+        margin-top: 20px;
+
+    }
+    
+    .main__wd{
+        width: 250px;
+    }
+
+    .main__m{
+        width: 300px;
+        top: 120px;
+        right: 40px;
+    }
+
+    /*about me */
+
+    .aboutme__titulo{
+        font-size: 27px;
+    }
+
+    .aboutme__texto{
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    /* projects */
+
+    .projects__container{
+        flex-basis: auto;
+    }
+
+    /* form */
+
+    .form__container textarea{
+        width: 330px;
+    }
+
+}

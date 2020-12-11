@@ -7,16 +7,33 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b3091bd40b.js" crossorigin="anonymous"></script>
+    <script src="../jquery.js"></script>
 </head>
 <body>
     <header>
-        <nav>
-            <li class="nav__li"><a class="nav__a" href="#projects">Proyectos</a></li>
-            <li class="nav__li"><a class="nav__a" href="#aboutme">Sobre mí</a></li>
-            <li class="nav__li nav__li--btn"><a class="nav__a nav__a--w" href="#main">Inicio</a></li>
-            <li class="nav__li"><a class="nav__a" href="#skills">Conocimientos</a></li>
-            <li class="nav__li"><a class="nav__a" href="#form">Contactos</a></li>
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li"><a class="nav__a" href="#projects">Proyectos</a></li>
+                <li class="nav__li"><a class="nav__a" href="#aboutme">Sobre mí</a></li>
+                <li class="nav__li nav__li--btn"><a class="nav__a nav__a--w" href="#main">Inicio</a></li>
+                <li class="nav__li"><a class="nav__a" href="#skills">Conocimientos</a></li>
+                <li class="nav__li"><a class="nav__a" href="#form">Contactos</a></li>
+            </ul>
+            <ul class="nav__ul__responsive">
+                <div class="menu__icon__container">
+                    <div class="menu__icon fas fa-bars"></div>
+                </div>
+                <div class="nav__li__responsive--container">
+                       <li class="nav__li__responsive"><a class="nav__a__responsive" href="#projects">Proyectos</a></li>
+                       <li class="nav__li__responsive"><a class="nav__a__responsive" href="#aboutme">Sobre mí</a></li>
+                       <li class="nav__li__responsive"><a class="nav__a__responsive" href="#main">Inicio</a></li>
+                       <li class="nav__li__responsive"><a class="nav__a__responsive" href="#skills">Conocimientos</a></li>
+                       <li class="nav__li__responsive"><a class="nav__a__responsive" href="#form">Contactos</a></li>
+                   </div>
+                </ul>
         </nav>
+
     </header>
     <section class="main" id="main">
         <div class="contenedor main__flex">
@@ -29,7 +46,7 @@
     </section>
     <section class="aboutme" id="aboutme">
         <h3 class="aboutme__h3">Sobre mí</h3>
-            <div class="aboutme__contenedor">
+        <div class="aboutme__contenedor">
                 <div class="aboutme__texto">
                     <h3 class="aboutme__titulo">Soy un desarrollador web autodidacta</h3>
                     <p class="aboutme__parrafo" >Adolescente cordobés (16), con ganas de aprender cosas todos los dias. Como ya lo dije, me considero autodidacta, me encanta investigar y aprender. Estoy recien comenzando como freelance, por lo tanto, necesito mis primeros clientes :). Cuento con distintas habilidades para los trabajos en equipo como:</p>
@@ -93,18 +110,18 @@
                 <p class="projects__text">Ver proyecto en .....</p>
             </div>
         </div>
-       
+        
         <!-- cada vez que hay proyecto nuevo solo copiar pegar y cambiar los titulos -->
-
+        
     </section>
     <section class="form" id="form">
         <h3 class="form__h3">Contactame</h3>
-            <form action="send.php" method="POST" class="form__real">
-                <div class="form__container">
-                    <input name="name" type="text" required>
-                    <label for="">Nombre:</label>
-                </div>
-                <div class="form__container">
+        <form action="send.php" method="POST" class="form__real">
+            <div class="form__container">
+                <input name="name" type="text" required>
+                <label for="">Nombre:</label>
+            </div>
+            <div class="form__container">
                     <input name="mail" type="text" required>
                     <label for="">E-mail:</label>
                 </div>
@@ -124,7 +141,7 @@
             </form>
     </section>
     <footer class="footer">
-            <h3 class="footer__h3">Julian Fermani</h3>
+        <h3 class="footer__h3">Julian Fermani</h3>
     </footer>
 </body>
 </html>
