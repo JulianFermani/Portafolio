@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b3091bd40b.js" crossorigin="anonymous"></script>
-    <script src="../jquery.js"></script>
 </head>
 <body>
     <header>
@@ -61,7 +60,9 @@
                 </div>
                 <img src="assets/ilustracion2.svg" alt="web developement" class="aboutme__ilustracion">
             </div>
-        <img src="assets/wave blue.svg" alt="ola azul" class="aboutme__wave">
+          <div class="aboutme__wave__container">
+            <img src="assets/wave blue.svg" alt="ola azul" class="aboutme__wave">
+          </div>
     </section>
     <section class="skills" id="skills">
         <h3>Conocimientos</h3>
@@ -99,7 +100,6 @@
                 <p>FIGMA</p>
             </div>
         </div>
-        <img src="assets/wave white.svg" class="skills__wave" alt="">
     </section>
     <section class="projects" id="projects">
         <h3 class="projects__h3">Proyectos</h3>
@@ -110,9 +110,9 @@
                 <p class="projects__text">Ver proyecto en .....</p>
             </div>
         </div>
-        
+          <img src="assets/wave white.svg" class="skills__wave" alt="">
         <!-- cada vez que hay proyecto nuevo solo copiar pegar y cambiar los titulos -->
-        
+
     </section>
     <section class="form" id="form">
         <h3 class="form__h3">Contactame</h3>
@@ -141,7 +141,7 @@
             </form>
     </section>
     <footer class="footer">
-        <h3 class="footer__h3">Julian Fermani</h3>
+        <h3 class="footer__h3">Julian Fermani - 2020</h3>
     </footer>
 </body>
 </html>
