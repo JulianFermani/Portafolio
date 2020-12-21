@@ -71,7 +71,7 @@ header{
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 20px
 }
 
 .main__h1{
@@ -92,21 +92,22 @@ header{
 
 .main__svg{
     width: 40%;
-    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 520px;
 }
 
 .main__wd{
-    width: 540px;
-    height: 300px;
-    position: relative;
-    padding-right: 30px;
+    width: 90%;
 }
 
 .main__m{
     position: absolute;
-    top: 70px;
-    width: 500px;
+    right: 0;
     z-index: -1;
+    width: 450px;
 }
 
 /* about me */
@@ -166,9 +167,10 @@ header{
 
 .aboutme__wave{
     width: 100%;
-    background-size: cover;
-    display: block;
-    line-height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 130px;
 }
 
 /* skills */
@@ -240,6 +242,7 @@ header{
 .projects__container{
     flex-basis: 27%;
     cursor: pointer;
+    border: none;
 }
 
 .projects__title{
@@ -262,14 +265,17 @@ header{
     margin-bottom: 30px;
 }
 
-.skills__wave{
-  display: block;
-  width: 100%;
+.wave__container{
+  position: relative;
+  padding-top: 60px;
 }
 
-.skills__wave img{
+.projects__wave{
+  position: absolute;
   width: 100%;
-  display: block;
+  left: 0;
+  bottom: 0;
+  height: 100px;
 }
 
 /* form */
@@ -378,18 +384,18 @@ header{
 
     .main__flex{
         flex-direction: column-reverse;
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
     .main__h1{
         font-size: 35px;
         width: 50%;
         margin-left: 0;
-        margin-top: 90px;
+        margin-top: 30px;
     }
 
     .main__svg{
-        margin: 0 auto;
+        height: 400px;
     }
 
     .main__wd{
@@ -398,8 +404,8 @@ header{
     }
 
     .main__m{
-        width: 430px;
-        top: 80px;
+        width: 500px;
+        right: inherit;
     }
 
     /* about me */
@@ -441,6 +447,10 @@ header{
         margin-top: 20px;
     }
 
+    .skills__btn--mb{
+      margin-bottom: 0;
+    }
+
     /* projects */
 
     .projects__container{
@@ -463,34 +473,7 @@ header{
     }
 }
 
-@media only screen and (max-width: 720px){
-
-    /* nav */
-
-    .nav__li{
-        font-size: 16px;
-        margin-top: 15px;
-        margin-left: 11px;
-    }
-
-    .nav__li--btn{
-        padding: 2px 24px;
-    }
-
-    /* main */
-
-    .main__wd{
-        width: 290px;
-        left: 10px;
-    }
-
-    .main__m{
-        width: 320px;
-        top: 120px;
-    }
-}
-
-@media only screen and (max-width: 460px){
+@media only screen and (max-width: 666px){
     /* nav responsive */
     .nav__ul{
         display: none;
@@ -560,18 +543,20 @@ header{
     .main__h1{
         width: 75%;
         font-size: 33px;
-        margin-top: 20px;
+        margin-top: 0px;
+    }
 
+    .main__svg{
+      height: 300px;
+      width: 350px;
     }
 
     .main__wd{
-        width: 250px;
+        width: 310px;
     }
 
     .main__m{
-        width: 300px;
-        top: 120px;
-        right: 40px;
+        width: 340px;
     }
 
     /*about me */
@@ -595,8 +580,6 @@ header{
       width: 100%;
     }
 
-
-
     /* projects */
 
     .projects__container{
@@ -609,4 +592,30 @@ header{
         width: 330px;
     }
 
+}
+
+@media only screen and (max-width: 350px){
+
+  /*main */
+
+  .main__svg{
+    width: 280px
+  }
+
+  .main__wd{
+    width: 240px;
+  }
+
+  .main__m{
+    width: 270px;
+  }
+
+  /* form */
+  .form__container input{
+    padding: 10px 30px 10px 5px;
+  }
+
+  .form__container textarea{
+    width: 256px;
+  }
 }
