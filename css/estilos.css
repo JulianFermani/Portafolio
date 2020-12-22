@@ -361,103 +361,6 @@ header{
   grid-column: 2/9;
 }
 
-/* form sin usar*/
-
-/* .form{
-    height: auto;
-}
-
-.form__h3{
-    font-size: 30px;
-    color: #0026CA;
-    text-align: center;
-    margin: 40px 0;
-}
-
-.form__real{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.form__container{
-    position: relative;
-}
-
-.form__container input{
-    color: #000000;
-    font-size: 18px;
-    padding: 10px 250px 10px 5px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #fdc9c9;
-    display: block;
-    margin-bottom: 80px;
-}
-
-.form__container label{
-    color: #000000;
-    position: absolute;
-    top: 12px;
-    left: 2px;
-    font-weight: 300;
-    transition: top .5s;
-}
-
-.form__container input:focus+label, .form__container input:valid+label{
-    top: -20px;
-}
-
-.form__container textarea:focus+label, .form__container textarea:valid+label{
-    top: -21px;
-}
-
-.form__textarea{
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.form__textarea label{
-    top: 0px;
-}
-
-.form__container textarea{
-    display: block;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #fdc9c9;
-    width: 1060px;
-    height: 150px;
-    resize: none;
-    transition: top .5s;
-}
-
-.form__submit{
-    width: 120px;
-    height: 50px;
-    border-radius: 6px;
-    margin: 20px auto 0 auto;
-    background-color: #3a3a98;
-    color: #ffffff;
-    cursor: pointer;
-    border: 0;
-    margin-bottom: 60px;
-} */
-
-/* footer sin usar*/
-
-/* .footer{
-    width: 100%;
-    background-color: #fdc9c9;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer__h3{
-    font-weight: 300;
-} */
 
 @media only screen and (max-width: 850px){
     /* main */
@@ -540,22 +443,7 @@ header{
         flex-basis: auto;
     }
 
-    /* form sin usar*/
-/*
-    .form__container input{
-        padding: 10px 100px 10px 5px;
-    }
-
-    .form__container textarea{
-        width: 720px;
-    }
-
-    .form__submit{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-} */
-
+}
 @media only screen and (max-width: 666px){
     /* nav responsive */
     .nav__ul{
@@ -669,14 +557,7 @@ header{
         flex-basis: auto;
     }
 
-    /* form sin usar */
-/*
-    .form__container textarea{
-        width: 330px;
-    }
-
-} */
-
+}
 @media only screen and (max-width: 350px){
 
   /*main */
@@ -702,14 +583,4 @@ header{
   .contact__h2{
     font-size: 50px;
   }
-
-  /* form sin usar*/
-  /* .form__container input{
-    padding: 10px 30px 10px 5px;
-  }
-
-  .form__container textarea{
-    width: 256px;
-  } */
-
 }
