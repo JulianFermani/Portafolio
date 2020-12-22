@@ -278,9 +278,92 @@ header{
   height: 100px;
 }
 
-/* form */
+/* contact */
 
-.form{
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact__h5{
+  font-size: 19px;
+  font-weight: 300;
+  color: #1d2d50;
+  margin-bottom: 30px;
+}
+
+.contact__h2{
+  font-size: 65px;
+  color: #1d2d50;
+}
+
+/* footer */
+
+.footer{
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.footer__container{
+  display: grid;
+  grid-template-columns: repeat(8, 30px);
+  grid-template-rows: repeat(4, 27px);
+  text-align: center;
+}
+
+.fab{
+  font-size: 25px;
+  color: #1d2d50;
+  cursor: pointer;
+}
+
+.github{
+  grid-column: 8/9;
+}
+
+.instagram{
+  grid-column: 7/8;
+}
+
+.whatsapp{
+  grid-column: 6/7;
+}
+
+.discord{
+  grid-column: 5/6;
+}
+
+.footer__p{
+  font-weight: 300;
+  color: #1d2d50;
+  font-size: 16px;
+  margin: auto 0px;
+}
+
+.num{
+  grid-column: 4/9;
+  grid-row: 2;
+}
+
+.mail{
+  grid-row: 3;
+  grid-column: 2/9;
+}
+
+.frase{
+  font-size: 20px;
+  font-weight: 600;
+  grid-row: 4;
+  grid-column: 2/9;
+}
+
+/* form sin usar*/
+
+/* .form{
     height: auto;
 }
 
@@ -359,11 +442,11 @@ header{
     cursor: pointer;
     border: 0;
     margin-bottom: 60px;
-}
+} */
 
-/* footer */
+/* footer sin usar*/
 
-.footer{
+/* .footer{
     width: 100%;
     background-color: #fdc9c9;
     height: 60px;
@@ -374,7 +457,7 @@ header{
 
 .footer__h3{
     font-weight: 300;
-}
+} */
 
 @media only screen and (max-width: 850px){
     /* main */
@@ -457,8 +540,8 @@ header{
         flex-basis: auto;
     }
 
-    /* form */
-
+    /* form sin usar*/
+/*
     .form__container input{
         padding: 10px 100px 10px 5px;
     }
@@ -471,7 +554,7 @@ header{
         margin-top: 20px;
         margin-bottom: 20px;
     }
-}
+} */
 
 @media only screen and (max-width: 666px){
     /* nav responsive */
@@ -586,13 +669,13 @@ header{
         flex-basis: auto;
     }
 
-    /* form */
-
+    /* form sin usar */
+/*
     .form__container textarea{
         width: 330px;
     }
 
-}
+} */
 
 @media only screen and (max-width: 350px){
 
@@ -610,12 +693,23 @@ header{
     width: 270px;
   }
 
-  /* form */
-  .form__container input{
+  /* contact */
+
+  .contact__h5{
+    font-size: 18px;
+  }
+
+  .contact__h2{
+    font-size: 50px;
+  }
+
+  /* form sin usar*/
+  /* .form__container input{
     padding: 10px 30px 10px 5px;
   }
 
   .form__container textarea{
     width: 256px;
-  }
+  } */
+
 }
