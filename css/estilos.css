@@ -80,6 +80,7 @@ header{
     width: 44%;
     text-align: center;
     margin-left: 40px;
+    position: relative;
 }
 
 .main__h1 span{
@@ -171,6 +172,7 @@ header{
     left: 0;
     bottom: 0;
     height: 130px;
+    z-index: -1;
 }
 
 /* skills */

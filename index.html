@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b3091bd40b.js" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <header>
@@ -17,7 +18,7 @@
                 <li class="nav__li"><a class="nav__a" href="#aboutme">Sobre mí</a></li>
                 <li class="nav__li nav__li--btn"><a class="nav__a nav__a--w" href="#main">Inicio</a></li>
                 <li class="nav__li"><a class="nav__a" href="#skills">Conocimientos</a></li>
-                <li class="nav__li"><a class="nav__a" href="#form">Contactos</a></li>
+                <li class="nav__li"><a class="nav__a" href="#contact">Contactos</a></li>
             </ul>
             <ul class="nav__ul__responsive">
                 <div class="menu__icon__container">
@@ -43,7 +44,7 @@
             </div>
         </div>
     </section>
-    <section class="aboutme" id="aboutme">
+    <section class="aboutme" id="aboutme" onload="desplazamiento()">
         <h3 class="aboutme__h3">Sobre mí</h3>
         <div class="aboutme__contenedor">
                 <div class="aboutme__texto">
@@ -67,35 +68,35 @@
     <section class="skills" id="skills">
         <h3>Conocimientos</h3>
         <div class="skills__container">
-            <div class="skills__btn">
+            <div class="skills__btn primerFila">
                 <img class="skills__btn--svg" src="assets/html5-brands.svg" alt="html5">
                 <p>HTML5</p>
             </div>
-            <div class="skills__btn">
+            <div class="skills__btn primerFila">
                 <img class="skills__btn--svg" src="assets/css3-alt-brands.svg" alt="css">
                 <p>CSS3</p>
             </div>
-            <div class="skills__btn">
+            <div class="skills__btn segundaFila">
                 <img class="skills__btn--svg" src="assets/bootstrap-brands.svg" alt="bootstrap">
                 <p>BOOTSTRAP</p>
             </div>
-            <div class="skills__btn">
+            <div class="skills__btn segundaFila">
                 <img class="skills__btn--svg" src="assets/palette-solid.svg" alt="UX/UI">
                 <p>UX / UI</p>
             </div>
-            <div class="skills__btn">
+            <div class="skills__btn tercerFila">
                 <img class="skills__btn--svg" src="assets/github-brands.svg" alt="github">
                 <p>GITHUB</p>
             </div>
-            <div class="skills__btn">
+            <div class="skills__btn tercerFila">
                 <img class="skills__btn--svg" src="assets/git-brands.svg" alt="git">
                 <p>GIT</p>
             </div>
-            <div class="skills__btn skills__btn--mb">
+            <div class="skills__btn skills__btn--mb cuartaFila">
                 <img class="skills__btn--svg" src="assets/js-brands.svg" alt="javascript">
                 <p>JAVASCRIPT</p>
             </div>
-            <div class="skills__btn skills__btn--mb">
+            <div class="skills__btn skills__btn--mb cuartaFila">
                 <img class="skills__btn--svg" src="assets/figma-brands.svg" alt="figma">
                 <p>FIGMA</p>
             </div>
@@ -115,13 +116,13 @@
           <svg class="projects__wave" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,154.7C384,160,480,224,576,218.7C672,213,768,139,864,128C960,117,1056,171,1152,197.3C1248,224,1344,224,1392,224L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
         </div>
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
       <h5 class="contact__h5">¿Tienes un proyecto?</h5>
       <h2 class="contact__h2">¡Hablemos!</h2>
     </section>
     <footer class="footer">
       <div class="footer__container">
-        <a class="discord" href="Julian😁👍#1078" target="_blank"><i class="fab fa-discord"></i></a>
+        <a class="discord" href="#contact" onclick="mostrarDiscord()" target="_blank"><i class="fab fa-discord"></i></a>
         <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5493535084517&text=%C2%A1Hola!%20Me%20llamo%20....%20y%20quisiera%20trabajar%20contigo!" target="_blank"><i class="fab fa-whatsapp"></i></a>
         <a class="instagram" href="https://www.instagram.com/juliannfermani/" target="_blank"><i class="fab fa-instagram"></i></a>
         <a class="github" href="https://github.com/JulianFermani" target="_blank"><i class="fab fa-github"></i></a>
@@ -130,5 +131,6 @@
         <p class="footer__p frase">¡Hago lo mejor por ti!</p>
       </div>
     </footer>
+    <script src="js/app.js" charset="utf-8"></script
 </body>
 </html>
