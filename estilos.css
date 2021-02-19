@@ -1,0 +1,588 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+}
+
+/* nav */
+
+.nav__ul{
+    display: flex;
+    justify-content: center;
+}
+
+.nav__li{
+    text-decoration: none;
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.nav__a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav__a--w{
+    color: #ffffff;
+}
+
+.nav__li--btn{
+    padding: 2px 32px;
+    background-color: #0026CA;
+    border-radius: 6px;
+    color: #ffffff;
+}
+
+.nav__ul__responsive{
+    display: none;
+}
+
+.menu__icon__container{
+    position: absolute;
+    width: 100%;
+    font-size: 25px;
+    background-color: #3a3a98;
+    margin-top: -100px;
+    z-index: 100;
+}
+
+.menu__icon{
+    padding: 6px 20px;
+    text-align: right;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* main */
+
+.main{
+    height: 100vh;
+}
+
+.main__flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px
+}
+
+.main__h1{
+    font-weight: bold;
+    font-size: 45px;
+    width: 44%;
+    text-align: center;
+    margin-left: 40px;
+    position: relative;
+}
+
+.main__h1 span{
+    color: #0026CA;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.main__svg{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 520px;
+}
+
+.main__wd{
+    width: 90%;
+}
+
+.main__m{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    width: 450px;
+}
+
+/* about me */
+
+.aboutme{
+    height: auto;
+}
+
+.aboutme__h3{
+    text-align: center;
+    color: #0026CA;
+    font-size: 30px;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.aboutme__contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.aboutme__titulo{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #3b3b3b;
+}
+
+.aboutme__parrafo{
+    color: #3b3b3b;
+    font-size: 18px;
+}
+
+.aboutme__li{
+    color: #3b3b3b;
+}
+
+.aboutme__texto{
+    width: 40%;
+    text-align: center;
+}
+
+.aboutme__ilustracion{
+    width: 40%;
+}
+
+.aboutme__ul__container{
+    display: flex;
+    justify-content: center;
+}
+
+.aboutme__li{
+    text-align: left;
+    font-size: 18px;
+    list-style: none;
+}
+
+.aboutme__wave{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 130px;
+    z-index: -1;
+}
+
+/* skills */
+
+.skills{
+    height: auto;
+    background-color: #0026CA;
+}
+
+.skills__container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.skills h3{
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+.skills__btn{
+    width: 40%;
+    height: 35px;
+    background-color: #ffffff;
+    display: flex;
+    border-radius: 6px;
+    padding: 3px;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.skills__btn--mb{
+  margin-bottom: 20px;
+}
+
+.skills__btn--svg{
+    width: 20px;
+}
+
+.skills__btn p{
+    margin-left: 6px;
+}
+
+
+/* projects */
+
+.projects{
+  background-color: #0026CA;
+  height: auto;
+}
+
+.projects__flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.projects__h3{
+    text-align: center;
+    font-size: 30px;
+    color: #fafafa;
+    margin: 0 0 50px 0;
+    padding-top: 20px;
+}
+
+.projects__container{
+    flex-basis: 27%;
+    cursor: pointer;
+    border: none;
+}
+
+.projects__title{
+    background-color: #efefef;
+    padding: 2px 50px;
+    text-align: center;
+}
+
+.projects__image{
+    display: block;
+    width: 100%;
+    height: 250px;
+    background-color: #a0616a;
+}
+
+.projects__text{
+    background-color: #efefef;
+    padding: 2px 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wave__container{
+  position: relative;
+  padding-top: 60px;
+}
+
+.projects__wave{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+}
+
+/* contact */
+
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact__h5{
+  font-size: 19px;
+  font-weight: 300;
+  color: #1d2d50;
+  margin-bottom: 30px;
+}
+
+.contact__h2{
+  font-size: 65px;
+  color: #1d2d50;
+}
+
+/* footer */
+
+.footer{
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.footer__container{
+  display: grid;
+  grid-template-columns: repeat(8, 30px);
+  grid-template-rows: repeat(4, 27px);
+  text-align: center;
+}
+
+.fab{
+  font-size: 25px;
+  color: #1d2d50;
+  cursor: pointer;
+}
+
+.github{
+  grid-column: 8/9;
+}
+
+.instagram{
+  grid-column: 7/8;
+}
+
+.whatsapp{
+  grid-column: 6/7;
+}
+
+.discord{
+  grid-column: 5/6;
+}
+
+.footer__p{
+  font-weight: 300;
+  color: #1d2d50;
+  font-size: 16px;
+  margin: auto 0px;
+}
+
+.num{
+  grid-column: 4/9;
+  grid-row: 2;
+}
+
+.mail{
+  grid-row: 3;
+  grid-column: 2/9;
+}
+
+.frase{
+  font-size: 20px;
+  font-weight: 600;
+  grid-row: 4;
+  grid-column: 2/9;
+}
+
+
+@media only screen and (max-width: 850px){
+    /* main */
+    .main{
+        height: auto;
+    }
+
+    .main__flex{
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+
+    .main__h1{
+        font-size: 35px;
+        width: 50%;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .main__svg{
+        height: 400px;
+    }
+
+    .main__wd{
+        width: 450px;
+        padding-right: 0;
+    }
+
+    .main__m{
+        width: 500px;
+        right: inherit;
+    }
+
+    /* about me */
+
+    .aboutme__h3{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .aboutme__contenedor{
+        flex-direction: column-reverse;
+    }
+
+    .aboutme__titulo{
+        font-size: 35px;
+    }
+
+    .aboutme__ilustracion{
+        width: 50%;
+    }
+
+    .aboutme__texto{
+        width: 60%;
+    }
+
+    /* skills */
+
+    .skills{
+        height: auto;
+    }
+
+    .skills h3{
+        font-size: 35px;
+    }
+
+    .skills__btn{
+        width: 70%;
+        height: 40px;
+        margin-top: 20px;
+    }
+
+    .skills__btn--mb{
+      margin-bottom: 0;
+    }
+
+    /* projects */
+
+    .projects__container{
+        flex-basis: auto;
+    }
+
+}
+@media only screen and (max-width: 666px){
+    /* nav responsive */
+    .nav__ul{
+        display: none;
+    }
+
+    .menu__icon{
+        display: block;
+        font-size: 23px;
+    }
+
+    .nav{
+        height: 50px;
+        width: 100%;
+    }
+
+
+    .nav__ul__responsive{
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin-top: 50px;
+        padding-top: 50px;
+        height: 50px;
+    }
+
+    .nav__li__responsive--container{
+        position: relative;
+        top: -1000px;
+        height: calc(100vh - 150px);
+        background: #3a3a98;
+        transition: all 1s;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav__li__responsive{
+        width: 50%;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        list-style: none;
+        background: #1f1f1f;
+        border-radius: 6px;
+        text-align: center;
+    }
+
+    .nav__li__responsive:hover{
+        background-color: #575757;
+        transition: all .7s;
+    }
+
+    .nav__a__responsive{
+        text-decoration: none;
+        list-style: none;
+        color: #efefef;
+        text-align: center;
+    }
+
+    .nav__ul__responsive:hover > .nav__li__responsive--container{
+        top: -70px;
+    }
+
+    /* main */
+
+    .main__h1{
+        width: 75%;
+        font-size: 33px;
+        margin-top: 0px;
+    }
+
+    .main__svg{
+      height: 300px;
+      width: 350px;
+    }
+
+    .main__wd{
+        width: 310px;
+    }
+
+    .main__m{
+        width: 340px;
+    }
+
+    /*about me */
+
+    .aboutme__titulo{
+        font-size: 27px;
+    }
+
+    .aboutmFlexibilidade__texto{
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .aboutme__wave__container{
+      display: block;
+      width: 100%;
+    }
+
+    .aboutme__wave img{
+      display: block;
+      width: 100%;
+    }
+
+    /* projects */
+
+    .projects__container{
+        flex-basis: auto;
+    }
+
+}
+@media only screen and (max-width: 350px){
+
+  /*main */
+
+  .main__svg{
+    width: 280px
+  }
+
+  .main__wd{
+    width: 240px;
+  }
+
+  .main__m{
+    width: 270px;
+  }
+
+  /* contact */
+
+  .contact__h5{
+    font-size: 18px;
+  }
+
+  .contact__h2{
+    font-size: 50px;
+  }
+}
