@@ -264,7 +264,7 @@ header{
 }
 
 .projects__flex{
-    display: flex;
+    /* display: flex; */
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -289,7 +289,7 @@ header{
   text-align: center;
   font-size: 30px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   color: #ffffff;
 }
 
