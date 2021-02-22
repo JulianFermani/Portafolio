@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b3091bd40b.js" crossorigin="anonymous"></script>
-      <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
 </head>
 <body>
     <header>
@@ -37,7 +38,7 @@
     </header>
     <section class="main" id="main">
         <div class="contenedor main__flex">
-            <h1 class="main__h1">¡Hola! Me llamo <span>Julian</span> y soy desarrollador web <span class="underline">frontend</span></h1>
+          <h1 class="main__h1"></h1>
             <div class="main__svg">
                 <img src="assets/ilustracion.svg" alt="web developement" class="main__wd">
                 <img src="assets/mancha.svg" alt="pintura" class="main__m">
@@ -45,19 +46,14 @@
         </div>
     </section>
     <section class="aboutme" id="aboutme" onload="desplazamiento()">
+      <div class="aboutme__h3__container">
         <h3 class="aboutme__h3">Sobre mí</h3>
+      </div>
         <div class="aboutme__contenedor">
                 <div class="aboutme__texto">
                     <h3 class="aboutme__titulo">Soy un desarrollador web autodidacta</h3>
-                    <p class="aboutme__parrafo" >Adolescente cordobés (16), con ganas de aprender cosas todos los dias. Como ya lo dije, me considero autodidacta, me encanta investigar y aprender. Estoy recien comenzando como freelance, por lo tanto, necesito mis primeros clientes :). Cuento con distintas habilidades para los trabajos en equipo como:</p>
-                    <div class="aboutme__ul__container">
-                        <div class="aboutme__ul">
-                            <li class="aboutme__li">➥Comunicación</li>
-                            <li class="aboutme__li">➥Flexibilidad</li>
-                            <li class="aboutme__li">➥Planificación</li>
-                            <li class="aboutme__li">➥Adaptación</li>
-                        </div>
-                    </div>
+                    <p class="aboutme__parrafo">Adolescente cordobés de 17 años, con entusiasmo de aprender cosas nuevas todos los dias. Me encuentro formandome como web developer de manera autodidacta y me lancé al mundo freelance. Tambien cuento con habilidades para los trabajos en equipo tales como: comunicación, flexibilidad, planificación y adaptación. Sin mas que agregar, te invito a descargar mi CV.</p>
+                    <a href="" class="aboutme__download" target="_blank" rel="noopener" download="JulianFermaniCurriculum">DESCARGA MI CV</a>
                 </div>
                 <img src="assets/ilustracion2.svg" alt="web developement" class="aboutme__ilustracion">
             </div>
@@ -66,7 +62,9 @@
             </div>
     </section>
     <section class="skills" id="skills">
-        <h3>Conocimientos</h3>
+      <div class="skills__h3__container">
+        <h3 class="skills__h3">Conocimientos</h3>
+      </div>
         <div class="skills__container">
             <div class="skills__btn primerFila">
                 <img class="skills__btn--svg" src="assets/html5-brands.svg" alt="html5">
@@ -103,15 +101,18 @@
         </div>
     </section>
     <section class="projects" id="projects">
-        <h3 class="projects__h3">Proyectos</h3>
+      <div class="projects__h3__container">
+        <h3 class="projects__h3">Trabajos</h3>
+      </div>
+        <p class="projects__ad"></p>
         <div class="projects__flex">
-            <div class="projects__container">
+            <!-- <div class="projects__container">
                 <h4 class="projects__title">Proyecto 1</h4>
                 <img class="projects__image" src="" alt="">
                 <p class="projects__text">Ver proyecto en .....</p>
             </div>
-            <!-- cada vez que hay proyecto nuevo solo copiar pegar y cambiar los titulos -->
-        </div>
+            cada vez que hay proyecto nuevo solo copiar pegar y cambiar los titulos -->
+         <!-- </div> -->
         <div class="wave__container">
           <svg class="projects__wave" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,154.7C384,160,480,224,576,218.7C672,213,768,139,864,128C960,117,1056,171,1152,197.3C1248,224,1344,224,1392,224L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
         </div>
@@ -131,6 +132,6 @@
         <p class="footer__p frase">¡Hago lo mejor por ti!</p>
       </div>
     </footer>
-    <script src="js/app.js" charset="utf-8"></script
+    <script src="js/app.js" charset="utf-8"></script>
 </body>
 </html>
