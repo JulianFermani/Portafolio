@@ -1,0 +1,25 @@
+body {
+  background-color: white;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif !important;
+}
+h1 {
+  font-weight: bold;
+}
+img {
+  margin-top: 20px;
+}
+.links {
+  margin-top: 20px;
+}
+.links a {
+  color: #0000EE;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.time {
+  font-style: italic;
+  margin-top: 10px;
+  display: block;
+  color: #0000EE;
+}

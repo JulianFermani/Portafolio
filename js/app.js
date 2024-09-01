@@ -1,21 +1,26 @@
-
-// Nombre de discord
-function mostrarDiscord() {
-  alert('¡Buscame como Julián#7777!');
+function updateTime() {
+    // Get the current date and time in Córdoba, Argentina time zone
+    let now = new Date().toLocaleString("en-US", { timeZone: "America/Argentina/Cordoba" });
+    let time = new Date(now);
+    
+    // Format time as HH:MM:SS AM/PM
+    let hours = time.getHours();
+    let minutes = time.getMinutes();
+    let seconds = time.getSeconds();
+    let ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? '0'+minutes : minutes;
+    seconds = seconds < 10 ? '0'+seconds : seconds;
+    
+    let timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
+    
+    // Display the time
+    document.getElementById('time').textContent = `HORA EN CÓRDOBA, ARGENTINA - ${timeString}`;
 }
 
- // TEXTO H1
+// Update the time every second
+setInterval(updateTime, 1000);
 
- new TypeIt(".main__h1", {
-   strings  : ["¡Hola! Me llamo <span>Julian</span> y"," soy desarrollador web","<span>frontend</span>"],
-   speed: 100,
-   waitUntilVisible: true
- }).go();
-
-// TEXTO DE PROJECTS
-
-const instance = new TypeIt(".projects__ad", {
-  strings: ["Proyectos aún en construcción, disculpe las molestias."],
-  waitUntilVisible: true,
-  speed: 100,
-}).go();
+// Call the function initially to display the time immediately
+updateTime();
